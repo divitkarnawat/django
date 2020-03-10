@@ -8,10 +8,15 @@ Open the assignment project in the terminal
 Write the following commands:
 
 pip install djangorestframework
+
 pip install bootstrap4 -> add "bootstrap4" in INSTALLED_APPS of settings.py file of assignment project
+
 python manage.py createsuperuser -> enter username, email and password
+
 python manage.py makemigrations
+
 python manage.py migrate
+
 python manage.py runserver
 
 From templates folder in webapp folder open the homepage.html
