@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HOMEPAGE
+        </title>
+
+        {% load static %}  
+        {% load bootstrap4 %}
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    </head>
+    <body>
+        <div class = "container align-items-center">
+            <h1 style="text-align: center; margin-top: 5%;"> HOMEPAGE</h1>
+            <div class="row" style="height: 100px; margin-top: 5%;">
+                <h4 style="text-align: center;"> Upload a CSV File :      </h4>
+                <a href = "http://localhost:8000/upload_page" class ="btn btn-success" style="height: 40%; margin-left: 5%; align-items: center;">Upload</a>
+            </div>
+            <div class="row">
+                <h4 style="text-align: center;"> Search branch name using :      </h4>
+
+                  <div class="col">
+                    <a href = "http://localhost:8000/show_ifsc" class ="btn btn-block btn-success">IFSC</a>
+                </div>
+                  <div class="col">
+                    <a href = "http://localhost:8000/show_bname_bcity" class ="btn btn-success btn-block">Bank Name and City</a>
+                </div>
+                  <div class="col">
+                    <a href = "http://localhost:8000/show_branch" class ="btn btn-success btn-block">All Branches</a>
+                </div>
+            </div>
+    
+
+    
+    </body>
+</html>

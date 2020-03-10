@@ -1,0 +1,23 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Bname Bcity Form</title>  
+   
+    {% load static %}  
+    {% load bootstrap4 %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>  
+<body> 
+    <div class="container" style=" text-align: center; margin-top: 5%; border: gray;  box-shadow: 20px; display: block;">
+        <h1 style="text-align: center;"> Bank Name and City Form </h1>   
+<form method="post" style="margin-top: 5%;" action = "http://localhost:8000/show_bname_bcity/"> {% csrf_token %}
+
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary"> SUBMIT</button>
+</form>
+</div>
+
+</body>  
+</html>  
